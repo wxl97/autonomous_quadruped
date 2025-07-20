@@ -1,0 +1,23 @@
+base_global_planner:
+  planner_type: "navfn/NavfnROS"
+  allow_unknown: true
+  default_tolerance: 0.05
+
+  visualize_potential: false  # Visualize the potential map of the global planner
+  use_dijkstra: false
+  use_quadratic: true
+  use_grid_path: true
+  old_navfn_behavior: false
+
+  lethal_cost: 253
+  neutral_cost: 66
+  cost_factor: 0.65
+  
+  publish_potential: true
+  orientation_mode: 0
+  orientation_window_size: 1
+  outline_map: true
+
+  planner_costmap_publish_frequency: 0.0  # frequency at which the planner costmap is published
+  planner_frequency: 1.0  # frequency at which the planner plans
+

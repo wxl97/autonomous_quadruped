@@ -1,0 +1,8 @@
+prefix=/home/fona/i2ROS/autonomous_quadruped/devel/.private/controller_pkg
+
+Name: controller_pkg
+Description: Description of controller_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp nav_msgs std_msgs tf geometry_msgs mav_msgs state_indicator_msgs trajectory_msgs

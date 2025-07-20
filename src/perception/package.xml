@@ -1,0 +1,27 @@
+<package format="2">
+  <name>perception</name>
+  <version>0.0.0</version>
+  <description>The perception package</description>
+  <maintainer email="yue22.zhang@tum.de">Yue Zhang</maintainer>
+  <license>BSD</license>
+
+  <!-- Dependencies -->
+  <depend>depth_image_proc</depend>
+  <depend>nodelet</depend>
+  <depend>nodelet_topic_tools</depend>
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>octomap</depend>
+  <depend>octomap_ros</depend>
+  <depend>pcl_ros</depend> 
+
+
+
+  <!-- Build tool dependency -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+    <build_type>catkin</build_type>
+  </export>
+</package>

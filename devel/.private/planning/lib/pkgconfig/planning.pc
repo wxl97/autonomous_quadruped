@@ -1,0 +1,8 @@
+prefix=/home/fona/i2ROS/autonomous_quadruped/devel/.private/planning
+
+Name: planning
+Description: Description of planning
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs mav_msgs eigen_conversions LinearMath mav_state_machine_msgs tf_conversions

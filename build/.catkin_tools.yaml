@@ -1,0 +1,6 @@
+devel_space: /home/fona/i2ROS/autonomous_quadruped/devel
+install: false
+install_space: /home/fona/i2ROS/autonomous_quadruped/install
+profile: default
+source_space: /home/fona/i2ROS/autonomous_quadruped/src
+workspace: /home/fona/i2ROS/autonomous_quadruped

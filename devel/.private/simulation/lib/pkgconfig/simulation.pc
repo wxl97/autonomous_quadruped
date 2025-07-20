@@ -1,0 +1,8 @@
+prefix=/home/fona/i2ROS/autonomous_quadruped/devel/.private/simulation
+
+Name: simulation
+Description: Description of simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: mav_msgs

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/fona/i2ROS/autonomous_quadruped/devel/.private/point_cloud_filter/setup.sh

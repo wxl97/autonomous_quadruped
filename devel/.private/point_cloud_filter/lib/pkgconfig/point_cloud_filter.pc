@@ -1,0 +1,8 @@
+prefix=/home/fona/i2ROS/autonomous_quadruped/devel/.private/point_cloud_filter
+
+Name: point_cloud_filter
+Description: Description of point_cloud_filter
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,3 @@
+geometry_msgs/Pose current_pose
+geometry_msgs/Pose generated_trajectory_point
+geometry_msgs/Pose waypoint_pose

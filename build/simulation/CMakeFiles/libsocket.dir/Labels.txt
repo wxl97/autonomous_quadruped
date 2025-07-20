@@ -1,0 +1,13 @@
+# Target labels
+ libsocket
+# Source files and their labels
+/home/fona/i2ROS/autonomous_quadruped/build/simulation/CMakeFiles/libsocket
+/home/fona/i2ROS/autonomous_quadruped/build/simulation/CMakeFiles/libsocket.rule
+/home/fona/i2ROS/autonomous_quadruped/build/simulation/CMakeFiles/libsocket-complete.rule
+/home/fona/i2ROS/autonomous_quadruped/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-install.rule
+/home/fona/i2ROS/autonomous_quadruped/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-mkdir.rule
+/home/fona/i2ROS/autonomous_quadruped/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-download.rule
+/home/fona/i2ROS/autonomous_quadruped/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-update.rule
+/home/fona/i2ROS/autonomous_quadruped/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-patch.rule
+/home/fona/i2ROS/autonomous_quadruped/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-configure.rule
+/home/fona/i2ROS/autonomous_quadruped/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-build.rule

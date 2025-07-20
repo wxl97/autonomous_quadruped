@@ -1,0 +1,8 @@
+prefix=/home/fona/i2ROS/autonomous_quadruped/install
+
+Name: trajectory_planning
+Description: Description of trajectory_planning
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -ltrajectory_planning
+Requires: roscpp nav_msgs tf geometry_msgs trajectory_msgs

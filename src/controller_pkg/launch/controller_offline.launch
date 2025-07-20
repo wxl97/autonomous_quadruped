@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="controller_pkg" type="controller_node_PID" name="controller_node_PID" output="screen" />
+  <node pkg="controller_pkg" type="state_machine_offline_node" name="state_machine_offline_node" output="screen" />
+</launch>

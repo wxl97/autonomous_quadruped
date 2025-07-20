@@ -1,0 +1,32 @@
+<launch>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find perception)/global_map/modified_global_map.yaml">
+      <param name="frame_id" value="world"/>
+    </node>
+
+    <!-- <param name="/use_sim_time" value="true"/> -->
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base">
+      <rosparam file="$(find planning)/param/costmap_common_params.yaml" command="load" ns="global_costmap"/> 
+      <rosparam file="$(find planning)/param/costmap_common_params.yaml" command="load" ns="local_costmap"/> 
+      <rosparam file="$(find planning)/param/local_costmap_params.yaml" command="load" />
+      <rosparam file="$(find planning)/param/global_costmap_params.yaml" command="load" /> 
+      <rosparam file="$(find planning)/param/base_local_planner_params.yaml" command="load" />
+      <rosparam file="$(find planning)/param/global_planner_params.yaml" command="load" />
+
+      <param name="planner_frequency" value="5.0" />
+      <param name="planner_patience" value="5.0" />
+      <param name="controller_frequency" value="5.0" />
+
+      <remap from="/move_base/NavfnROS/plan" to="/global_plan"/>
+      <!-- <remap from="/move_base/DWAPlannerROS/local_plan" to="/local_plan"/> -->
+
+
+      <remap from="cmd_vel" to="Quadruped/cmd_vel"/>
+    </node>
+
+    <!-- add planning_node -->
+    <node pkg="planning" type="planning_online_node" name="planning_online_node" output="screen" />
+    <node pkg="planning" type="trajectory_publisher_node" name="trajectory_publisher_node" output="screen" />
+
+
+</launch> 

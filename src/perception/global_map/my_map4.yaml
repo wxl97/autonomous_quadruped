@@ -1,0 +1,7 @@
+image: /home/yzhang/Documents/Yue/perception/autonomous_quadruped/src/perception/global_map/my_map4.pgm
+resolution: 0.040000
+origin: [-2.920000, -1.880000, -nan]
+negate: 0
+occupied_thresh: 0.7
+free_thresh: 0.196
+

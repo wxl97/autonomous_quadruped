@@ -1,0 +1,19 @@
+<launch>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find perception)/global_map/modified_global_map.yaml">
+      <param name="frame_id" value="world"/>
+    </node>
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base">
+      <rosparam file="$(find planning)/param/costmap_common_params.yaml" command="load" ns="global_costmap"/> 
+      <rosparam file="$(find planning)/param/costmap_common_params.yaml" command="load" ns="local_costmap"/> 
+      <rosparam file="$(find planning)/param/local_costmap_params.yaml" command="load" />
+      <rosparam file="$(find planning)/param/global_costmap_params.yaml" command="load" /> 
+
+      <remap from="cmd_vel" to="Quadruped/cmd_vel"/>
+    </node>
+
+    <!-- add planning_node -->
+    <node pkg="planning" type="planning_offline_node" name="planning_offline_node" output="screen" />
+
+
+</launch> 

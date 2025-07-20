@@ -1,0 +1,14 @@
+# Use DWAPlannerROS as the local planner
+base_local_planner: "dwa_local_planner/DWAPlannerROS"
+
+DWAPlannerROS:
+  max_vel_x: 0.5  # Maximum forward velocity
+  min_vel_x: 0.1  # Minimum forward velocity
+  max_vel_theta: 1.0  # Maximum rotational velocity
+  min_in_place_vel_theta: 0.4  # Minimum rotational velocity in place
+  acc_lim_x: 1.0  # Maximum acceleration in x
+  acc_lim_theta: 2.0  # Maximum rotational acceleration
+  xy_goal_tolerance: 0.2  # Goal tolerance in the x-y plane
+  yaw_goal_tolerance: 0.1  # Goal tolerance in yaw
+  latch_xy_goal_tolerance: true  # Continue to move towards the goal if goal tolerance is achieved
+  # Additional parameters to tune the behavior
